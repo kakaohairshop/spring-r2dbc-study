@@ -1,0 +1,5 @@
+###
+GET http://localhost/v1/shops/1/stylers
+
+###
+GET http://localhost/v1/shops/1/stylers?name=홍길동
