@@ -1,5 +1,0 @@
-###
-GET http://localhost/v1/shops
-
-###
-GET http://localhost/v2/shops

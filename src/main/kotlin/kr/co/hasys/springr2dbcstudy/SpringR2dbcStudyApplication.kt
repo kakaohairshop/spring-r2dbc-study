@@ -18,7 +18,7 @@ class SpringR2dbcStudyApplication {
      * schema.sql를 실행
      */
     @Bean
-    fun initializer(connectionFactory: ConnectionFactory): ConnectionFactoryInitializer? {
+    fun initializer(connectionFactory: ConnectionFactory): ConnectionFactoryInitializer {
         val initializer = ConnectionFactoryInitializer()
         initializer.setConnectionFactory(connectionFactory)
         initializer.setDatabasePopulator(ResourceDatabasePopulator(ClassPathResource("schema.sql")))
