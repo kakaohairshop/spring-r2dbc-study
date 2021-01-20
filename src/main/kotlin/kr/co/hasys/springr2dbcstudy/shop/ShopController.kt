@@ -26,5 +26,5 @@ class ShopController {
      * R2dbcRepository 버전
      */
     @GetMapping("/v2/shops")
-    fun get2(): Flux<ShopResponse> = shopRepository.findAll().map { ShopResponse(it.id, it.name) }
+    fun get2(): Flux<ShopResponse> = shopRepository.findAll().map { ShopResponse(it.id ?: "", it.name) }
 }

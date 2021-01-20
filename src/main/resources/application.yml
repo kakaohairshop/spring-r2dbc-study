@@ -3,5 +3,3 @@ spring:
     url: r2dbc:h2:mem:///test
     username: sa
     password:
-  datasource:
-    data: schema.sql

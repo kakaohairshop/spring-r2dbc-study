@@ -16,8 +16,8 @@ class StylerController {
     @GetMapping("/v1/shops/{shopId}/stylers")
     fun get(@PathVariable shopId: String, @RequestParam(required = false) name: String?): Flux<StylerResponse> {
 
-        name?.let { return stylerRepository.findByName(name).map { StylerResponse(it.id, it.name) } }
+        name?.let { return stylerRepository.findByName(name).map { StylerResponse(it.id ?: "", it.name) } }
 
-        return stylerRepository.findByShopId(shopId).map { StylerResponse(it.id, it.name) }
+        return stylerRepository.findByShopId(shopId).map { StylerResponse(it.id ?: "", it.name) }
     }
 }
