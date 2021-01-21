@@ -27,3 +27,6 @@ Content-Type: application/json
 
 ### 400
 DELETE http://localhost/v2/shops/1
+
+### 200
+DELETE http://localhost/v2/shops/2

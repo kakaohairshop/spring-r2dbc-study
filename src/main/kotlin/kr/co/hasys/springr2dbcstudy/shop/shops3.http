@@ -1,0 +1,29 @@
+###
+GET http://localhost/v3/shops
+
+###
+POST http://localhost/v3/shops
+Content-Type: application/json
+
+{
+  "name": "파란헤어"
+}
+
+### 200
+PUT http://localhost/v3/shops/1
+Content-Type: application/json
+
+{
+  "name": "이가자"
+}
+
+### 404
+PUT http://localhost/v3/shops/2
+Content-Type: application/json
+
+{
+  "name": "이가자"
+}
+
+### 400
+DELETE http://localhost/v3/shops/1
