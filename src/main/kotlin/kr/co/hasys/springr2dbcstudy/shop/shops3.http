@@ -2,6 +2,9 @@
 GET http://localhost/v3/shops
 
 ###
+GET http://localhost/v3/shops/1
+
+###
 POST http://localhost/v3/shops
 Content-Type: application/json
 
