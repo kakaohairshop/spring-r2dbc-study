@@ -40,5 +40,4 @@ class ShopControllerV3(val shopRepository: ShopRepository) {
     fun delete(@PathVariable id: String) = shopRepository.deleteById(id)
             .onErrorMap { ShopHasStylerException() }
 
-
 }
